@@ -1,0 +1,90 @@
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #0790eb, #90aed6, #e0e6e9);
+  background-size: 100% 100%;
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.header {
+  text-align: center;
+  color: rgb(31, 29, 29);
+  font-size: 30px;
+}
+
+.searchBox {
+  position: absolute;
+  left: 12%;
+  transform:  translate(-50%,50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+background: white;
+color : #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+}
+
+.stock {
+  text-align: left;
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+  width: 150px;
+  padding: 0 6px;
+}
+}
